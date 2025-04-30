@@ -126,6 +126,8 @@
     }
     .desktop4 .project-number{
         font-size: 30px;
+        top:40px
+
     }
 }  
 
@@ -144,7 +146,6 @@
     }
     .desktop4 .project-number{
         font-size: 30px;
-        top:40px
 
     }
 }  

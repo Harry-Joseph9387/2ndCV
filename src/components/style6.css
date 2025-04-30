@@ -221,7 +221,7 @@
     .desktop6 .project-number{
         font-size: 30px;
         /* top:0px; */
-
+        top:40px
     }
 }  
 
@@ -240,7 +240,6 @@
     }
     .desktop6 .project-number{
         font-size: 30px;
-        top:40px
 
     }
 }  
