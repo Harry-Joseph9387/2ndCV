@@ -1,0 +1,244 @@
+.desktop6{
+    width: 100%;
+    height:100vh;
+
+}
+ .desktop6 .div{
+    width:100%;
+    height:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    position: relative;
+
+ }
+
+ .desktop6 .project-title{
+    width:50%;
+    font-size: 78px;
+    font-weight: 500;
+
+ }
+ .desktop6 .project-details{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    gap:35px;
+    font-size: 27px;
+    color:white;
+    /* font-weight: 500; */
+ }
+ @media screen and (max-width: 1000px) {
+   .desktop6 .project-title{
+       font-size:70px ;
+   }
+   .desktop6 .project-details{
+       font-size:24px ;
+   }
+}
+@media screen and (max-width: 930px) {
+   .desktop6 .project-title{
+       font-size:65px ;
+   }
+   .desktop6 .project-details{
+       font-size:21px ;
+   }
+}
+@media screen and (max-width: 800px) {
+   .desktop6 .project-title{
+       font-size:60px ;
+   }
+   .desktop6 .project-details{
+       font-size:20px ;
+   }
+}
+
+@media screen and (max-width: 700px) {
+   .desktop6 .project-title{
+       font-size:60px ;
+       /* background-color: aqua; */
+       text-align: center;
+   }
+   .desktop6 .project-details{
+       font-size:21px ;
+       width: 60%;
+       font-weight: 600;
+   }
+   .desktop6 .div{
+       flex-direction: column;
+       justify-content: center;
+       /* background-color: blue; */
+       gap:50px;
+   }
+   .div .project-title{
+       width:90%;
+   }
+   .desktop6  .div .project-details p, .desktop6 .div a {
+       color:black;
+   }
+   .desktop6 .project-number{
+       color: #000;
+       right:-10px;
+   }
+   
+}
+@media screen and (max-width: 700px) {
+   .desktop6 .project-title{
+       font-size:50px ;
+       /* background-color: aqua; */
+       text-align: center;
+   }
+   .desktop6 .project-details{
+       font-size:20px ;
+       width: 70%;
+       font-weight: 600;
+   }
+   .div{
+       gap:20px;
+   }
+}
+@media screen and (max-width: 500px) {
+   .desktop6 .project-title{
+       font-size:40px ;
+       /* background-color: aqua; */
+       text-align: center;
+       font-weight: 700;
+   }
+   .desktop6 .project-details{
+       font-size:19px ;
+       width: 70%;
+       font-weight: 600;
+   }
+   .desktop6 .project-number{
+       font-size: 30px;
+   }
+}  
+
+@media screen and (max-width: 350px) {
+   .desktop6 .project-title{
+       font-size:38px ;
+       text-align: center;
+       font-weight: 700;
+       width: 100%;
+   }
+   .desktop6 .project-details{
+       font-size:17px ;
+       width: 90%;
+       font-weight: 600;
+       gap:25px;
+   }
+   .desktop6 .project-number{
+       font-size: 30px;
+   }
+}  
+
+@media screen and (max-width: 1000px) {
+    .desktop6 .project-title{
+        font-size:70px ;
+    }
+    .desktop6 .project-details{
+        font-size:24px ;
+    }
+}
+@media screen and (max-width: 930px) {
+    .desktop6 .project-title{
+        font-size:65px ;
+    }
+    .desktop6 .project-details{
+        font-size:21px ;
+    }
+}
+@media screen and (max-width: 800px) {
+    .desktop6 .project-title{
+        font-size:60px ;
+    }
+    .desktop6 .project-details{
+        font-size:20px ;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .desktop6 .project-title{
+        font-size:60px ;
+        /* background-color: aqua; */
+        text-align: center;
+    }
+    .desktop6 .project-details{
+        font-size:21px ;
+        width: 60%;
+        font-weight: 600;
+    }
+    .desktop6 .div{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* background-color: blue; */
+        gap:50px;
+    }
+    .div .project-title{
+        width:90%;
+    }
+    .desktop6  .div .project-details p, .desktop6 .div a {
+        color:black;
+    }
+    .desktop6 .project-number{
+        color: #000;
+        right:-10px;
+    }
+    
+}
+@media screen and (max-width: 700px) {
+    .desktop6 .project-title{
+        font-size:50px ;
+        /* background-color: aqua; */
+        text-align: center;
+    }
+    .desktop6 .project-details{
+        font-size:20px ;
+        width: 70%;
+        font-weight: 600;
+    }
+    .div{
+        gap:20px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .desktop6 .div{
+        gap:40px;
+    }
+    .desktop6 .project-title{
+        font-size:40px ;
+        /* background-color: aqua; */
+        text-align: center;
+        font-weight: 700;
+    }
+    .desktop6 .project-details{
+        font-size:19px ;
+        width: 70%;
+        font-weight: 600;
+        gap:30px;
+    }
+    .desktop6 .project-number{
+        font-size: 30px;
+        /* top:0px; */
+
+    }
+}  
+
+@media screen and (max-width: 350px) {
+    .desktop6 .project-title{
+        font-size:38px ;
+        text-align: center;
+        font-weight: 700;
+        width: 100%;
+    }
+    .desktop6 .project-details{
+        font-size:17px ;
+        width: 90%;
+        font-weight: 600;
+        gap:25px;
+    }
+    .desktop6 .project-number{
+        font-size: 30px;
+    }
+}  

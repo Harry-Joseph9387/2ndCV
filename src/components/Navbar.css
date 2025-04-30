@@ -1,0 +1,121 @@
+.navbar {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #9292923b;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.nav-icon {
+    font-size: 20px;
+    color: #333333;
+    transition: transform 0.3s ease;
+}
+
+.nav-label {
+    position: absolute;
+    left: 38px; /* Position to the right of the icon */
+    white-space: nowrap;
+    background-color: rgba(240, 240, 240, 0.95);
+    padding: 4px 12px;
+    border-radius: 8px;
+    color: #333333;
+    font-size: 14px;
+    font-weight: 500;
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: all 0.3s ease;
+    pointer-events: none; /* Prevents flickering when moving to the label */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect to show the label */
+.nav-item:hover .nav-label {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.nav-item:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.nav-item:hover .nav-icon {
+    transform: scale(1.1);
+}
+
+/* Active state for click feedback */
+.nav-item:active {
+    background-color: rgba(0, 0, 0, 0.1);
+    transform: scale(0.95);
+}
+
+.nav-item:active .nav-icon {
+    transform: scale(1);
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .navbar {
+        padding: 8px;
+    }
+    
+    .nav-container {
+        gap: 15px;
+    }
+    
+    .nav-icon {
+        font-size: 18px;
+    }
+    
+    .nav-label {
+        font-size: 12px;
+        left: 34px;
+        padding: 3px 10px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navbar {
+        padding: 6px;
+        top: 10px;
+        left: 10px;
+    }
+    
+    .nav-container {
+        gap: 10px;
+    }
+    
+    .nav-icon {
+        font-size: 16px;
+    }
+    
+    .nav-label {
+        font-size: 10px;
+        left: 30px;
+        padding: 2px 8px;
+    }
+} 

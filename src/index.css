@@ -11,3 +11,25 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Add these to your existing styles */
+.dark-bg-text {
+  color: white !important;
+}
+
+.light-bg-text {
+  color: black !important;
+}
+
+/* Ensure fixed elements are still visible */
+.navbar {
+  /* background-color: rgba(217, 217, 217, 0.9) !important; Semi-transparent navbar */
+}
+
+/* Add backdrop filters for better text readability if supported */
+/* @supports (backdrop-filter: blur(10px)) {
+  .navbar {
+    backdrop-filter: blur(10px);
+    background-color: rgba(217, 217, 217, 0.7) !important;
+  }
+} */

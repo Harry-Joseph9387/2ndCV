@@ -1,0 +1,209 @@
+.desktop3 {
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    height:100vh;
+}
+
+/* .desktop3 *{
+  height: 100%;
+  width: 100%;
+} */
+
+.desktop3 .div {
+    position: relative;
+    height: 100%;
+  width: 100%;
+
+}
+
+.skills-section{
+  width: 100%;
+  height:100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills-section h1{
+  height: auto;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  font-size:96px;
+  font-weight: normal;
+}
+
+.skills {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.skill-bubble{
+  width:auto;
+  max-width: 160px;
+  color: white;
+  font-size:25px;
+  font-weight: 500;
+  border: 2px solid black;
+  border-radius:100px;
+  padding:40px 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 120px;
+  min-height: 30px;
+  max-height: 60px;
+  word-break: keep-all;
+  white-space: nowrap;
+} 
+
+
+
+.skill-bubble .oop{
+  max-width: 360px;
+}
+
+@media screen and (max-width: 1000px) {
+  .skill-bubble{
+    font-size: 22px;
+    min-width: 110px;
+    padding:40px 25px;
+  }
+  .skills-section h1{
+    font-size: 85px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .skill-bubble{
+    font-size: 20px;
+    min-width: 110px;
+    padding:35px 22px;
+  }
+  .skills-section h1{
+    font-size: 80px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .skill-bubble{
+    font-size: 18px;
+    min-width: 100px;
+    padding:36px 22px;
+  }
+  .skills-section h1{
+    font-size:75px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .desktop3 .div .skills-section .skills-title{
+    color:black !important;
+  }
+  
+  /* Small screen layout styles */
+  .desktop3 {
+    height: auto;
+    min-height: 100vh;
+    padding: 20px 0 40px;
+  }
+  
+  .desktop3 .div {
+    height: auto;
+    align-items: center;
+    display: flex;
+  }
+  
+  .skills-section {
+    height: auto;
+    flex-direction: column;
+    /* padding: 30px 15px; */
+    position: relative;
+    width: 100%;
+  }
+  
+  .skills-section h1 {
+    position: relative;
+    top: auto;
+    left: auto;
+    transform: none;
+    margin: 0 0 30px;
+    padding: 10px 20px;
+    font-size: 42px;
+    text-align: center;
+    font-weight: bold;
+    color: black !important;
+    font-weight: 700;
+    display: inline-block;
+    align-self: center;
+    letter-spacing: 2px;
+    z-index: 2;
+    width: auto;
+  }
+  
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 0;
+    width: 100%;
+    position: static;
+    /* padding: 0 10px; */
+    z-index: 1;
+  }
+  
+  .skill-bubble {
+    position: static !important;
+    font-size: 16px;
+    padding: 15px 20px;
+    min-width: auto;
+    max-width: 120px;
+    min-height: 20px;
+    max-height: 45px;
+    margin: 5px;
+    color: black !important;
+    border-color: black !important;
+    border-radius: 50px;
+    transition: all 0.2s ease;
+    /* Prevent word breaks */
+    word-break: keep-all;
+    white-space: nowrap;
+  }
+  
+  .skill-bubble > span {
+    color: black !important;
+  }
+  
+  .skill-bubble span * {
+    color: black !important;
+  }
+  
+  .skill-bubble .letter-span {
+    color: black !important;
+  }
+  
+  .skill-bubble:hover {
+    transform: scale(1.05);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .skill-bubble span br {
+    display: none;
+  }
+  
+  /* Special case for longer skills that need more space */
+  .skill-bubble.oop, 
+  .skill-bubble.machine-learning {
+    padding: 12px 20px;
+    max-width: 150px;
+    height: auto;
+    max-height: none;
+    white-space: normal;
+    text-align: center;
+    line-height: 1.4;
+  }
+}

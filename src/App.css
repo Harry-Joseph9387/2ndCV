@@ -1,38 +1,86 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app-container {
+  position: relative;
+  max-width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  /* overflow-y: scroll; */
+  /* -ms-overflow-style: none;   */
+  /* scrollbar-width: none;  */
 }
 
-.App-link {
-  color: #61dafb;
+.background-left, 
+.background-right {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  z-index: -1;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.background-left {
+  left: 0;
+  right: 50%;
+  background-color: white; /* Left side color */
+  transform-origin: bottom right;
+  transform: skewX(-30deg); /* Match the divider angle */
+  width: 60%; /* Wider to account for skew */
+}
+
+.background-right {
+  /* top: */
+  left: 52%; /* Overlap with left side */
+  right: 0;
+  background-color: black; /* Right side color */
+  /* transform-origin: top left; */
+  transform: skewX(-10deg); /* Match the divider angle */
+  width:100%;
+}
+
+
+/* Adjust content wrapper to have higher z-index */
+.content-wrapper {
+  position: relative;
+  z-index: 1;
+  width: 80%;
+  height: 80%;
+  /* overflow: auto; */
+  /* border:5px solid orange; */
+} 
+.marker {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: red;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+.project-number{
+  position: absolute;
+  top:10px;
+  right:10px;
+  color:white;
+  font-size:40px;
+  font-style:italic;
+}
+* a {
+  color:white;
+}
+@media screen and (max-width: 1500px) {
+  .content-wrapper{
+    width:85%;
   }
-  to {
-    transform: rotate(360deg);
+}
+@media screen and (max-width: 700px) {
+  .background-right{
+    /* transform: skewX(143.5deg); Match the divider angle */
+    display: none;
+
   }
+}
+@media screen and (max-width: 700px) {
+  .deskfinal{
+    display: none;
+  }
+  
 }

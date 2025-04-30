@@ -1,0 +1,102 @@
+.desktop2{
+    width:100%;
+    height:100vh;
+}
+
+.desktop2 .div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.desktop2 .content-left{
+    width: 100%;
+    font-size: 96px;
+}
+.desktop2 .content-right{
+    width:60%;
+    color: white;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    gap:40px;
+}
+
+/* Media query for screens 1200px or less */
+@media screen and (max-width: 1200px) {
+    .desktop2 .div {
+        /* padding: 0 20px; Reduce horizontal padding */
+        
+    }
+    
+    .desktop2 .content-left {
+        font-size: 80px; /* Reduce font size by 25% */
+        font-weight: 400;
+        
+    }
+    
+    .desktop2 .content-right {
+        font-size: 23px; /* Reduce font size */
+        gap: 25px; /* Reduce gap between elements */
+        width: 55%; /* Adjust width slightly */
+    }
+}
+
+@media screen and (max-width: 930px) {
+    .desktop2 .content-left {
+        font-size: 70px;
+    }
+    .desktop2 .content-right {
+        font-size: 22px; /* Reduce font size */
+    }
+}
+@media screen and (max-width: 800px) {
+    .desktop2 .content-left {
+        font-size: 60px;
+    }
+    .desktop2 .content-right {
+        font-size: 20px; /* Reduce font size */
+    }
+}
+@media screen and (max-width: 700px) {
+    .desktop2 .content-left {
+        font-size: 70px;
+        
+    }
+    .desktop2 .content-right {
+        font-size: 22px; /* Reduce font size */
+        width: 60%;
+        font-weight: 500;
+    }
+    .desktop2 .div{
+        flex-direction: column;
+        justify-content: center;
+        gap:80px;
+    }
+    .desktop2 .div .content-right{
+        color:black;
+    }
+}
+@media screen and (max-width: 550px) {
+    .desktop2 .content-left {
+        font-size: 60px;
+    }
+    .desktop2 .div{
+        gap:50px;
+    }
+    .desktop2 .content-right {
+        font-size: 22px; 
+        width: 80%;
+    }
+}
+@media screen and (max-width: 550px) {
+    .desktop2 .content-left {
+        font-size: 50px;
+        font-weight: 700;
+    }
+    .desktop2 .content-right {
+        font-size: 18px; 
+        width: 90%;
+    }
+}

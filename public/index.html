@@ -40,4 +40,38 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
   </body>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      // Function to update text colors
+      function updateColors() {
+        // Get the dividing line position - middle of screen by default
+        const screenMiddle = window.innerWidth / 2;
+        
+        // Find all skill bubbles
+        const bubbles = document.querySelectorAll('.skill-bubble');
+        
+        bubbles.forEach(bubble => {
+          const rect = bubble.getBoundingClientRect();
+          const bubbleCenter = rect.left + (rect.width / 2);
+          const textElement = bubble.querySelector('span');
+          
+          if (!textElement) return;
+          
+          // If bubble is on the right side of the screen
+          if (bubbleCenter > screenMiddle) {
+            textElement.style.color = 'white';
+          } else {
+            textElement.style.color = 'black';
+          }
+        });
+      }
+      
+      // Update colors initially and on resize
+      updateColors();
+      window.addEventListener('resize', updateColors);
+      
+      // Also update periodically to catch any dynamic changes
+      setInterval(updateColors, 1000);
+    });
+  </script>
 </html>
