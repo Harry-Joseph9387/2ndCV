@@ -214,11 +214,11 @@
     }
     .desktop1 .intro-name-container{
         max-width: none;
-        width: 440px;
-        height:230px;
+        width: 398px;
+        height:192px;
     }
     .desktop1 .intro-name-container h2,.desktop1 .intro-name-container h3{
-        font-size:100px;
+        font-size:90px;
     }
     .social-links{
         width: auto;
@@ -248,11 +248,11 @@
     }
     .desktop1 .intro-name-container{
         max-width: none;
-        width: 310px;
-        height:160px;
+        width: 375px;
+        height:181px;
     }
     .desktop1 .intro-name-container h2,.desktop1 .intro-name-container h3{
-        font-size:70px;
+        font-size:85px;
     }
    
 }
@@ -261,10 +261,13 @@
         font-size: 40px;
     }
     .desktop1 .intro-name-container {
-        font-size: 60px; 
-        height:160px;
-        
+        height:161px;
+        width:332px;   
     }
+    .desktop1 .intro-name-container h2,.desktop1 .intro-name-container h3{
+        font-size:75px;
+    }
+   
 }
 @media screen and (max-width: 350px) {
     .desktop1 .content-left {
@@ -273,7 +276,7 @@
     .desktop1 .intro-name-container {
         font-size: 60px; 
         width:288px;
-        height: 147px;
+        height: 140px;
     }
     .desktop1 .intro-name-container h2,.desktop1 .intro-name-container h3{
         font-size:65px;

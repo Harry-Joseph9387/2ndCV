@@ -1,209 +1,410 @@
 .desktop3 {
-    background-color: transparent;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-    position: relative;
-    height:100vh;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+  height:100vh;
 }
 
 /* .desktop3 *{
-  height: 100%;
-  width: 100%;
+height: 100%;
+width: 100%;
 } */
 
 .desktop3 .div {
-    position: relative;
-    height: 100%;
-  width: 100%;
-
+  position: relative;
+  height: 100%;
+width: 100%;
 }
 
 .skills-section{
-  width: 100%;
-  height:100%;
-  display:flex;
-  justify-content: center;
-  align-items: center;
+width: 100%;
+height:100%;
+display:flex;
+justify-content: center;
+align-items: center;
 }
 
 .skills-section h1{
+height: auto;
+position: absolute;
+top:50%;
+left:50%;
+transform: translate(-50%, -50%);
+font-size:96px;
+font-weight: normal;
+}
+
+.skills {
+position: relative;
+width: 100%;
+height: 100%;
+}
+
+.skill-bubble{
+width:auto;
+max-width: 160px;
+color: white;
+font-size:25px;
+font-weight: 500;
+border: 2px solid black;
+border-radius:100px;
+padding:40px 30px;
+display: flex;
+justify-content: center;
+align-items: center;
+min-width: 120px;
+min-height: 30px;
+max-height: 60px;
+word-break: keep-all;
+white-space: nowrap;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+background: linear-gradient(135deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0) 100%);
+backdrop-filter: blur(2px);
+transition: all 0.3s ease;
+} 
+
+.skill-bubble .oop{
+max-width: 360px;
+}
+
+@media screen and (max-width: 1000px) {
+.skill-bubble{
+  font-size: 22px;
+  min-width: 110px;
+  /* padding:40px 25px; */
+}
+.skills-section h1{
+  font-size: 85px;
+}
+}
+@media screen and (max-width: 900px) {
+.skill-bubble{
+  font-size: 20px;
+  min-width: 110px;
+  /* padding:35px 22px; */
+}
+.skills-section h1{
+  font-size: 80px;
+}
+}
+@media screen and (max-width: 800px) {
+.skill-bubble{
+  font-size: 18px;
+  min-width: 100px;
+  padding:36px 22px;
+}
+.skills-section h1{
+  font-size:75px;
+}
+}
+@media screen and (max-width: 700px) {
+/* Small screen layout styles */
+.desktop3 {
   height: auto;
+  min-height: 100vh;
+  padding: 20px 0 40px;
+}
+
+.desktop3 .div {
+  height: auto;
+  align-items: center;
+  display: flex;
+}
+
+.skills-section {
+  height: auto;
+  position: relative;
+  width: 100%;
+  padding-top: 0;
+  padding-bottom: 20px;
+}
+
+.skills-section h1,
+.desktop3 .div .skills-section .skills-title {
   position: absolute;
-  top:50%;
-  left:50%;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
-  font-size:96px;
-  font-weight: normal;
+  margin: 0;
+  /* padding: 10px 20px; */
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  color: black !important;
+  z-index: 10;
+  /* background-color: rgba(255, 255, 255, 0.8); */
+  /* border-radius: 10px; */
+  /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); */
 }
 
 .skills {
   position: relative;
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 500px; /* Height will be controlled by JS for responsiveness */
+  margin: 0 auto;
+  box-sizing: border-box;
+  border-radius: 10px;
+  overflow: visible;
 }
 
-.skill-bubble{
-  width:auto;
-  max-width: 160px;
-  color: white;
-  font-size:25px;
-  font-weight: 500;
-  border: 2px solid black;
-  border-radius:100px;
-  padding:40px 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-width: 120px;
-  min-height: 30px;
-  max-height: 60px;
+.skill-bubble {
+  position: absolute; /* We'll position these with JS */
+  font-size: 13px;
+  /* padding: 8px 12px; */
+  min-width: auto; /* Set to auto for all bubbles */
+  max-width: 110px;
+  min-height: 16px;
+  max-height: 35px;
+  color: black !important;
+  border-color: black !important;
+  border-radius: 50px;
+  transition: transform 0.2s ease;
   word-break: keep-all;
   white-space: nowrap;
-} 
-
-
-
-.skill-bubble .oop{
-  max-width: 360px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-width: 1px;
+  margin: 0;
 }
 
-@media screen and (max-width: 1000px) {
-  .skill-bubble{
-    font-size: 22px;
-    min-width: 110px;
-    padding:40px 25px;
+.skill-bubble > span {
+  color: black !important;
+}
+
+.skill-bubble span * {
+  color: black !important;
+}
+
+.skill-bubble .letter-span {
+  color: black !important;
+}
+
+.skill-bubble:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+/* Special case for longer skills that need more space */
+.skill-bubble.oop, 
+.skill-bubble.machine-learning {
+  padding: 6px 10px;
+  max-width: 90px;
+  height: auto;
+  max-height: none;
+  white-space: normal;
+  text-align: center;
+  line-height: 1.2;
+  font-size: 11px;
+}
+
+/* Style for skill bubbles containing multiple divs (formatted long skills) */
+.skill-bubble div {
+  text-align: center;
+  line-height: 1.2;
+}
+
+/* Style for the additional mobile-only skills */
+.skill-bubble.neural-network,
+.skill-bubble.database,
+.skill-bubble.data-structures {
+  font-size: 11px;
+  padding: 8px 12px;
+  max-width: 90px;
+  white-space: normal;
+  text-align: center;
+  line-height: 1.2;
+  min-width: auto;
+}
+
+/* Format the ANN skill to display well */
+.skill-bubble.neural-network {
+  max-width: 85px;
+  padding: 8px 12px;
+  height: auto;
+  max-height: none;
+}
+
+/* Floating animation for skill bubbles */
+.skill-bubble {
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+/* Apply different animation delays to create varied movement */
+.skill-bubble:nth-child(1) { animation-delay: 0s; }
+.skill-bubble:nth-child(2) { animation-delay: 0.2s; }
+.skill-bubble:nth-child(3) { animation-delay: 0.4s; }
+.skill-bubble:nth-child(4) { animation-delay: 0.6s; }
+.skill-bubble:nth-child(5) { animation-delay: 0.8s; }
+.skill-bubble:nth-child(6) { animation-delay: 1.0s; }
+.skill-bubble:nth-child(7) { animation-delay: 1.2s; }
+.skill-bubble:nth-child(8) { animation-delay: 1.4s; }
+.skill-bubble:nth-child(9) { animation-delay: 1.6s; }
+.skill-bubble:nth-child(10) { animation-delay: 1.8s; }
+.skill-bubble:nth-child(11) { animation-delay: 2.0s; }
+.skill-bubble:nth-child(12) { animation-delay: 2.2s; }
+
+/* Define the floating animation */
+@keyframes floating {
+  0% {
+    transform: translate(0, 0);
   }
-  .skills-section h1{
-    font-size: 85px;
+  50% {
+    transform: translate(0, 5px);
+  }
+  100% {
+    transform: translate(0, 0);
   }
 }
-@media screen and (max-width: 900px) {
-  .skill-bubble{
-    font-size: 20px;
-    min-width: 110px;
-    padding:35px 22px;
+
+/* Horizontal floating for even-numbered bubbles */
+.skill-bubble:nth-child(even) {
+  animation-name: floating-horizontal;
+}
+
+@keyframes floating-horizontal {
+  0% {
+    transform: translate(0, 0);
   }
-  .skills-section h1{
-    font-size: 80px;
+  50% {
+    transform: translate(4px, 4px);
+  }
+  100% {
+    transform: translate(0, 0);
   }
 }
-@media screen and (max-width: 800px) {
-  .skill-bubble{
-    font-size: 18px;
-    min-width: 100px;
-    padding:36px 22px;
+
+/* Different animation durations for varied movement */
+.skill-bubble:nth-child(3n) {
+  animation-duration: 4s;
+}
+
+.skill-bubble:nth-child(3n+1) {
+  animation-duration: 3.5s;
+}
+
+.skill-bubble:nth-child(3n+2) {
+  animation-duration: 4.5s;
+}
+
+/* Slight rotation for some bubbles */
+.skill-bubble:nth-child(4n) {
+  animation-name: floating-rotate;
+}
+
+@keyframes floating-rotate {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
   }
-  .skills-section h1{
-    font-size:75px;
+  50% {
+    transform: translate(0, 4px) rotate(1deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
   }
 }
-@media screen and (max-width: 700px) {
-  .desktop3 .div .skills-section .skills-title{
-    color:black !important;
+
+/* Make all bubbles smaller to fit better */
+.skill-bubble {
+  position: absolute;
+  font-size: 12px; /* Smaller font */
+  padding: 6px 10px; /* Reduced padding */
+  min-width: auto; /* Ensure min-width is auto */
+  max-width: 100px; /* Slightly smaller max-width */
+  min-height: 14px;
+  max-height: 32px;
+  border-width: 1px;
+}
+
+/* Special case for longer skills that need more space */
+.skill-bubble.oop, 
+.skill-bubble.machine-learning,
+.skill-bubble.neural-network,
+.skill-bubble.database {
+  padding: 8px 12px;
+  max-width: 80px;
+  height: auto;
+  max-height: none;
+  white-space: normal;
+  text-align: center;
+  line-height: 1.2;
+  font-size: 10px;
+  min-width: auto;
+}
+
+/* Specific styling for data-structures with line break */
+.skill-bubble.data-structures {
+  padding: 8px 12px;
+  max-width: 70px;
+  height: auto;
+  max-height: none;
+  white-space: normal;
+  text-align: center;
+  line-height: 1.2;
+  font-size: 10px;
+  min-width: auto;
+}
+
+/* Specific styling for c-language - force to be on multiple lines */
+.skill-bubble.c-language {
+  padding: 5px 8px;
+  max-width: 70px;
+  height: auto;
+  max-height: none;
+  white-space: normal;
+  text-align: center;
+  line-height: 1.2;
+  font-size: 10px;
+  min-width: auto; /* Ensure min-width is auto */
+}
+}
+
+/* Extra small screen adjustments */
+@media screen and (max-width: 400px) {
+.skills-section h1 {
+  font-size: 30px;
+  /* padding: 8px 15px; */
+}
+
+.skills {
+  height: 450px;
+  width: 95%;
+}
+
+.skill-bubble {
+  font-size: 10px;
+  padding: 5px 8px;
+  max-width: 75px;
+  min-width: auto;
+}
+
+.skill-bubble.oop, 
+.skill-bubble.machine-learning,
+.skill-bubble.neural-network,
+.skill-bubble.database,
+.skill-bubble.data-structures,
+.skill-bubble.c-language {
+  padding: 4px 7px;
+  max-width: 65px;
+  font-size: 9px;
+}
+
+/* Smaller movement on very small screens */
+@keyframes floating {
+  0% {
+    transform: translate(0, 0);
   }
-  
-  /* Small screen layout styles */
-  .desktop3 {
-    height: auto;
-    min-height: 100vh;
-    padding: 20px 0 40px;
+  50% {
+    transform: translate(0, 5px);
   }
-  
-  .desktop3 .div {
-    height: auto;
-    align-items: center;
-    display: flex;
+  100% {
+    transform: translate(0, 0);
   }
-  
-  .skills-section {
-    height: auto;
-    flex-direction: column;
-    /* padding: 30px 15px; */
-    position: relative;
-    width: 100%;
-  }
-  
-  .skills-section h1 {
-    position: relative;
-    top: auto;
-    left: auto;
-    transform: none;
-    margin: 0 0 30px;
-    padding: 10px 20px;
-    font-size: 42px;
-    text-align: center;
-    font-weight: bold;
-    color: black !important;
-    font-weight: 700;
-    display: inline-block;
-    align-self: center;
-    letter-spacing: 2px;
-    z-index: 2;
-    width: auto;
-  }
-  
-  .skills {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 12px;
-    margin-top: 0;
-    width: 100%;
-    position: static;
-    /* padding: 0 10px; */
-    z-index: 1;
-  }
-  
-  .skill-bubble {
-    position: static !important;
-    font-size: 16px;
-    padding: 15px 20px;
-    min-width: auto;
-    max-width: 120px;
-    min-height: 20px;
-    max-height: 45px;
-    margin: 5px;
-    color: black !important;
-    border-color: black !important;
-    border-radius: 50px;
-    transition: all 0.2s ease;
-    /* Prevent word breaks */
-    word-break: keep-all;
-    white-space: nowrap;
-  }
-  
-  .skill-bubble > span {
-    color: black !important;
-  }
-  
-  .skill-bubble span * {
-    color: black !important;
-  }
-  
-  .skill-bubble .letter-span {
-    color: black !important;
-  }
-  
-  .skill-bubble:hover {
-    transform: scale(1.05);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  }
-  
-  .skill-bubble span br {
-    display: none;
-  }
-  
-  /* Special case for longer skills that need more space */
-  .skill-bubble.oop, 
-  .skill-bubble.machine-learning {
-    padding: 12px 20px;
-    max-width: 150px;
-    height: auto;
-    max-height: none;
-    white-space: normal;
-    text-align: center;
-    line-height: 1.4;
-  }
+}
 }
