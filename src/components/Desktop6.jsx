@@ -21,7 +21,7 @@ export const Desktop6 = () => {
               Integrated a MongoDB database to store information.
             </p>
             
-            <a href="https://event-management-website-delta.vercel.app/">live demo link</a>
+            <a href="https://event-management-website-74d3.vercel.app/">live demo link</a>
             
            <a href="https://github.com/Harry-Joseph9387/EventManagementWebsite">github repo</a>
           </div>

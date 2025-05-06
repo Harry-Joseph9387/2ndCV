@@ -54,7 +54,7 @@
     }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 750px) {
     .desktop5 .project-title{
         font-size:60px ;
         /* background-color: aqua; */
@@ -84,7 +84,7 @@
     }
     
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 750px) {
     .desktop5 .project-title{
         font-size:50px ;
         /* background-color: aqua; */

@@ -7,14 +7,14 @@ export const Desktop3 = () => {
   const lineRef = useRef(null);
   const [isSmallScreen, setIsSmallScreen] = useState(false);
 
-  // Check if screen is small (below 700px)
+  // Check if screen is small (below 750px)
   const checkScreenSize = () => {
-    setIsSmallScreen(window.innerWidth <= 700);
+    setIsSmallScreen(window.innerWidth <= 750);
   };
 
   // Function to force black text on all skill elements - only for small screens
   const forceBlackTextForSmallScreen = () => {
-    if (window.innerWidth <= 700) {
+    if (window.innerWidth <= 750) {
       // Force black text on all skill bubbles and their children
       const skillBubbles = document.querySelectorAll(".skill-bubble");
       skillBubbles.forEach(bubble => {
@@ -69,7 +69,7 @@ export const Desktop3 = () => {
     }
     
     // Format Artificial Neural Network skill (small screens only)
-    if (window.innerWidth <= 700) {
+    if (window.innerWidth <= 750) {
       const annSkill = document.querySelector(".skill-bubble.neural-network span");
       if (annSkill && !annSkill.querySelector('div') && !annSkill.dataset.processed) {
         try {
@@ -106,7 +106,7 @@ export const Desktop3 = () => {
 
   // Function to handle mobile-only skills
   const manageMobileSkills = () => {
-    if (window.innerWidth <= 700) {
+    if (window.innerWidth <= 750) {
       // Check if mobile skills container already exists
       let mobileSkillsContainer = document.querySelector('.mobile-only-skills');
       
@@ -155,7 +155,7 @@ export const Desktop3 = () => {
 
   // New function to arrange bubbles around the title
   const arrangeScatteredBubbles = () => {
-    if (window.innerWidth <= 700) {
+    if (window.innerWidth <= 750) {
       const container = document.querySelector(".skills");
       const bubbles = document.querySelectorAll(".skill-bubble");
       const title = document.querySelector(".skills-title");

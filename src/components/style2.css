@@ -59,7 +59,7 @@
         font-size: 20px; /* Reduce font size */
     }
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 750px) {
     .desktop2 .content-left {
         font-size: 70px;
         

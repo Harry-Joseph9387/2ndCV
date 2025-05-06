@@ -21,7 +21,7 @@ export const Desktop1 = () => {
           <div className="icon-bg" style={{ cursor: 'pointer' }} onClick={()=>{window.open("https://www.linkedin.com/in/harry-joseph-a68568318/", "_blank")}}>
             <FaLinkedin className='icon'/>
           </div>
-          <div className="icon-bg" style={{ cursor: 'pointer' }} onClick={()=>{window.open("/Resume.pdf", "_blank")}}>
+          <div className="icon-bg" style={{ cursor: 'pointer' }} onClick={()=>{window.open("../Harry Joseph.pdf", "_blank")}}>
             <HiDocumentText className='icon'/>
           </div>
         </div>

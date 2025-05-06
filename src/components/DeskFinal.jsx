@@ -75,7 +75,7 @@ export const DeskFinal = () => {
 
   // Function to check if we should apply the color effect
   const shouldApplyColorEffect = () => {
-    return window.innerWidth > 700;
+    return window.innerWidth > 750;
   };
 
   // Force all text to black for small screens
